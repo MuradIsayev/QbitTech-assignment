@@ -1,11 +1,12 @@
 import React from 'react';
 import { ModeToggle } from '../components/mode-toggle';
 import { Input } from '@/components/ui/input';
+import { Separator } from '@/components/ui/separator';
 
 const SearchBar = () => {
   return (
-    <nav className="w-full h-10 bg-red-400">
-      <div className="flex justify-between items-center gap-2">
+    <nav className="w-full h-10 mb-6">
+      <div className="flex justify-between items-center gap-2 mb-3">
         <Input
           type="text"
           className="max-w-sm"
@@ -15,6 +16,7 @@ const SearchBar = () => {
         />
         <ModeToggle />
       </div>
+      <Separator />
     </nav>
   );
 };
