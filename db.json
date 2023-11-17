@@ -1,0 +1,56 @@
+{
+    "houses": [
+        {
+            "id": 1,
+            "imageURLs": [
+                "url1",
+                "url2"
+            ],
+            "floor": 2,
+            "price": 150000.0,
+            "address": "123 Main St",
+            "area": 1200,
+            "description": "Beautiful house with a garden",
+            "isFurnished": true
+        },
+        {
+            "id": 2,
+            "imageURLs": [
+                "url3",
+                "url4"
+            ],
+            "floor": 1,
+            "price": 90000.0,
+            "address": "456 Elm St",
+            "area": 800,
+            "description": "Cozy apartment in the city center",
+            "isFurnished": false
+        },
+        {
+            "id": 3,
+            "imageURLs": [
+                "url5",
+                "url6"
+            ],
+            "floor": 3,
+            "price": 200000.0,
+            "address": "789 Oak St",
+            "area": 1500,
+            "description": "Spacious villa with a pool",
+            "isFurnished": true
+        },
+        {
+            "id": 4,
+            "imageURLs": [
+                "url7",
+                "url8"
+            ],
+            "floor": 2,
+            "price": 120000.0,
+            "address": "101 Pine St",
+            "area": 1000,
+            "description": "Modern loft in downtown",
+            "isFurnished": true
+        }
+    ]
+}
