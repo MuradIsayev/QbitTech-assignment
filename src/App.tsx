@@ -1,13 +1,16 @@
-import { ModeToggle } from './components/mode-toggle';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
   return (
     <>
-      <ModeToggle />
-
-      <nav className='w-full h-10 bg-red-200'>
-
-      </nav>
+      <div className="h-screen overflow-hidden overflow-y-scroll p-4">
+        <div className="main-container ">
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
+      </div>
     </>
   );
 }
