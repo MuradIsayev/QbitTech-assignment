@@ -10,7 +10,7 @@
             "price": 150000.0,
             "address": "123 Main St",
             "area": 1200,
-            "description": "Beautiful house with a garden",
+            "description": "Beautiful house with a garden, close to the park.",
             "isFurnished": true
         },
         {
@@ -23,7 +23,7 @@
             "price": 90000.0,
             "address": "456 Elm St",
             "area": 800,
-            "description": "Cozy apartment in the city center",
+            "description": "Cozy apartment in the city center. You will love it.",
             "isFurnished": false
         },
         {
@@ -36,7 +36,7 @@
             "price": 200000.0,
             "address": "789 Oak St",
             "area": 1500,
-            "description": "Spacious villa with a pool",
+            "description": "Spacious villa with a pool and a garden.",
             "isFurnished": true
         },
         {
@@ -49,7 +49,7 @@
             "price": 120000.0,
             "address": "101 Pine St",
             "area": 1000,
-            "description": "Modern loft in downtown",
+            "description": "Modern loft in downtown area. Close to everything.",
             "isFurnished": true
         }
     ]
