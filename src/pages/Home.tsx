@@ -29,8 +29,8 @@ const Home = () => {
         <SearchBar />
       </nav>
       <div>
-        <h3 className="mb-3 text-2xl">Houses</h3>
-        <div className="flex flex-row flex-wrap justify-between gap-2">
+        <h3 className="mb-3 text-3xl">Houses</h3>
+        <div className="grid-cols-3 md:grid lg:grid-cols-4">
           {houses.map(house => (
             <Card key={house.id} house={house} />
           ))}
