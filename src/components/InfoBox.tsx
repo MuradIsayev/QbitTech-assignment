@@ -14,7 +14,7 @@ const InfoBox = ({ header, icon, value, unit }: Props) => {
   return (
     <div
       className={`flex flex-col ${
-        header === 'Description' ? 'grow' : 'w-48'
+        header === 'Description' ? 'grow' : 'lg:w-48 grow lg:grow-0'
       } w-48 p-2 bg-gray-200 rounded-lg h-28 dark:bg-gray-800`}
     >
       <h1 className="text-[1.2rem] uppercase font-semibold">{header}</h1>
