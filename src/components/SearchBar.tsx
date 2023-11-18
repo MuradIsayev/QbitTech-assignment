@@ -6,9 +6,9 @@ import { Separator } from '@/components/ui/separator';
 const SearchBar = () => {
   return (
     <nav className="w-full h-10 mb-6">
-      <div className="flex justify-between items-center gap-2 mb-3">
+      <div className="flex items-center justify-between gap-2 mb-3">
         <Input
-          type="text"
+          type="search"
           className="max-w-sm"
           name="search"
           placeholder="Search by address..."
