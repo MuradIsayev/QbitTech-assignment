@@ -12,7 +12,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ house }) => {
   return (
     <>
-      <Link to="#">
+      <Link to={`/house/${house?.id}`}>
         <div className="max-w-xs m-2 bg-white border border-gray-200 rounded-lg shadow cursor-pointer group md:max-w-sm lg:max-w-lg dark:bg-gray-800 dark:border-gray-700">
           <img
             className="transition-all duration-200 rounded-t-lg opacity-90 group-hover:opacity-100"
