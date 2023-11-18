@@ -3,8 +3,11 @@
         {
             "id": 1,
             "imageURLs": [
-                "url1",
-                "url2"
+                "https://www.livehome3d.com/assets/img/social/how-to-design-a-house.jpg",
+                "https://mygate.com/wp-content/uploads/2023/07/110.jpg",
+                "https://assets-news.housing.com/news/wp-content/uploads/2022/04/07013406/ELEVATED-HOUSE-DESIGN-FEATURE-compressed.jpg",
+                "https://cdn.houseplansservices.com/product/f14kbdvad9hvfguvli1jk9m26b/w620x413.jpg?v=4",
+                "https://www.thehousedesigners.com/images/plans/URD/bulk/6583/the-destination-front-rendering.jpg"
             ],
             "floor": 2,
             "price": 150000.0,
@@ -16,8 +19,11 @@
         {
             "id": 2,
             "imageURLs": [
-                "url3",
-                "url4"
+                "https://www.livehome3d.com/assets/img/social/how-to-design-a-house.jpg",
+                "https://mygate.com/wp-content/uploads/2023/07/110.jpg",
+                "https://assets-news.housing.com/news/wp-content/uploads/2022/04/07013406/ELEVATED-HOUSE-DESIGN-FEATURE-compressed.jpg",
+                "https://cdn.houseplansservices.com/product/f14kbdvad9hvfguvli1jk9m26b/w620x413.jpg?v=4",
+                "https://www.thehousedesigners.com/images/plans/URD/bulk/6583/the-destination-front-rendering.jpg"
             ],
             "floor": 1,
             "price": 90000.0,
@@ -29,8 +35,11 @@
         {
             "id": 3,
             "imageURLs": [
-                "url5",
-                "url6"
+                "https://www.livehome3d.com/assets/img/social/how-to-design-a-house.jpg",
+                "https://mygate.com/wp-content/uploads/2023/07/110.jpg",
+                "https://assets-news.housing.com/news/wp-content/uploads/2022/04/07013406/ELEVATED-HOUSE-DESIGN-FEATURE-compressed.jpg",
+                "https://cdn.houseplansservices.com/product/f14kbdvad9hvfguvli1jk9m26b/w620x413.jpg?v=4",
+                "https://www.thehousedesigners.com/images/plans/URD/bulk/6583/the-destination-front-rendering.jpg"
             ],
             "floor": 3,
             "price": 200000.0,
@@ -42,8 +51,11 @@
         {
             "id": 4,
             "imageURLs": [
-                "url7",
-                "url8"
+                "https://www.livehome3d.com/assets/img/social/how-to-design-a-house.jpg",
+                "https://mygate.com/wp-content/uploads/2023/07/110.jpg",
+                "https://assets-news.housing.com/news/wp-content/uploads/2022/04/07013406/ELEVATED-HOUSE-DESIGN-FEATURE-compressed.jpg",
+                "https://cdn.houseplansservices.com/product/f14kbdvad9hvfguvli1jk9m26b/w620x413.jpg?v=4",
+                "https://www.thehousedesigners.com/images/plans/URD/bulk/6583/the-destination-front-rendering.jpg"
             ],
             "floor": 2,
             "price": 120000.0,
