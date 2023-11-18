@@ -2,6 +2,11 @@ import { fetchHouseById } from '@/api/card';
 import { House } from '@/types/house';
 import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router-dom';
+import area from '../assets/icons/area.png';
+import floor from '../assets/icons/floor.png';
+import money from '../assets/icons/money.png';
+import InfoBox from '@/components/InfoBox';
+import furniture from '../assets/icons/furniture.png';
 
 type HouseParams = {
   id: string;
@@ -31,23 +36,39 @@ const HouseDetails = () => {
   }
 
   return (
-    <div>
-      <div className="grid w-full gap-4 lg:grid-rows-3 lg:grid-cols-4 md:grid-cols-2 md:grid-rows-2">
-        {house.imageURLs.map((imageURL, index) => (
-          <div
-            key={index}
-            className={`${index === 0 ? 'lg:col-span-2 lg:row-span-2 md:col-span-1 md:row-span-1' : ''}`}
-          >
-            <img
-              className="w-full h-full rounded-lg object-fit"
-              src={imageURL}
-              alt="house image"
-            />
-          </div>
-        ))}
+    <>
+      <div className="h-auto p-3 mt-3 bg-gray-200 rounded-lg dark:bg-gray-800">
+        <div className="grid w-full gap-4 lg:grid-rows-2 lg:grid-cols-4 md:grid-cols-2 md:grid-rows-2">
+          {house.imageURLs.map((imageURL, index) => (
+            <div
+              key={index}
+              className={`${
+                index === 0
+                  ? 'lg:col-span-2 lg:row-span-2 md:col-span-1 md:row-span-1'
+                  : ''
+              }`}
+            >
+              <img
+                className="w-full h-full rounded-lg object-fit"
+                src={imageURL}
+                alt="house image"
+              />
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="flex"></div>
-    </div>
+      <div className="flex items-center w-full gap-3 mt-2">
+        <InfoBox icon={money} header="Price" unit="AZN" value={house?.price} />
+        <InfoBox icon={area} header="Area" unit="m²" value={house?.area} />
+        <InfoBox icon={floor} header="Floor" value={house?.floor} />
+        <InfoBox
+          icon={furniture}
+          header="Furnished"
+          value={house?.isFurnished}
+        />
+        <InfoBox header="Description" value={house?.description} />
+      </div>
+    </>
   );
 };
 
