@@ -1,4 +1,3 @@
-import React from 'react';
 import { ModeToggle } from '../components/mode-toggle';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';

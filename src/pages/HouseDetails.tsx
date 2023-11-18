@@ -32,7 +32,21 @@ const HouseDetails = () => {
 
   return (
     <div>
-      {house.address} - {parsedId}
+      <div className="grid w-full gap-4 lg:grid-rows-3 lg:grid-cols-4 md:grid-cols-2 md:grid-rows-2">
+        {house.imageURLs.map((imageURL, index) => (
+          <div
+            key={index}
+            className={`${index === 0 ? 'lg:col-span-2 lg:row-span-2 md:col-span-1 md:row-span-1' : ''}`}
+          >
+            <img
+              className="w-full h-full rounded-lg object-fit"
+              src={imageURL}
+              alt="house image"
+            />
+          </div>
+        ))}
+      </div>
+      <div className="flex"></div>
     </div>
   );
 };
