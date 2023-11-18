@@ -12,3 +12,21 @@ export const fetchHouses = async (): Promise<House[]> => {
     return [];
   }
 };
+
+export const fetchHouseById = async ({
+  id
+}: {
+  id: number;
+}): Promise<House> => {
+  try {
+    const response = await axios.get(
+      `${import.meta.env.VITE_APP_BACKEND_URL}/${id}`
+    );
+    const house = response.data;
+
+    return house;
+  } catch (error) {
+    console.error('Error fetching house:', error);
+    return {} as House;
+  }
+};
