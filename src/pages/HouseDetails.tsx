@@ -1,7 +1,7 @@
 import { fetchHouseById } from '@/api/card';
 import { House } from '@/types/house';
 import { useQuery } from '@tanstack/react-query';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import area from '../assets/icons/area.png';
 import floor from '../assets/icons/floor.png';
 import money from '../assets/icons/money.png';
@@ -37,7 +37,13 @@ const HouseDetails = () => {
 
   return (
     <>
-      <div className="h-auto p-3 mt-3 bg-gray-200 rounded-lg dark:bg-gray-800">
+      <Link to="/house">
+        <div className="inline-flex items-center px-3 py-2 mt-1 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Go Back
+        </div>
+      </Link>
+      <h3 className="mt-2 mb-2 text-xl">{house.address}</h3>
+      <div className="h-auto p-3 bg-gray-200 rounded-lg dark:bg-gray-800">
         <div className="grid w-full gap-4 lg:grid-rows-2 lg:grid-cols-4 md:grid-cols-2 md:grid-rows-2">
           {house.imageURLs.map((imageURL, index) => (
             <div
@@ -57,16 +63,16 @@ const HouseDetails = () => {
           ))}
         </div>
       </div>
-      <div className="flex items-center w-full gap-3 mt-2">
-        <InfoBox icon={money} header="Price" unit="AZN" value={house?.price} />
-        <InfoBox icon={area} header="Area" unit="m²" value={house?.area} />
-        <InfoBox icon={floor} header="Floor" value={house?.floor} />
+      <div className="flex flex-wrap items-center w-full gap-3 mt-2">
+        <InfoBox icon={money} header="Price" unit="AZN" value={house.price} />
+        <InfoBox icon={area} header="Area" unit="m²" value={house.area} />
+        <InfoBox icon={floor} header="Floor" value={house.floor} />
         <InfoBox
           icon={furniture}
           header="Furnished"
-          value={house?.isFurnished}
+          value={house.isFurnished}
         />
-        <InfoBox header="Description" value={house?.description} />
+        <InfoBox header="Description" value={house.description} />
       </div>
     </>
   );

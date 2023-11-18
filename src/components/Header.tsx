@@ -10,7 +10,6 @@ const Header = () => {
         <ModeToggle />
       </nav>
       <Separator />
-
     </>
   );
 };
