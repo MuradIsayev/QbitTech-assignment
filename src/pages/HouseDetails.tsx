@@ -56,7 +56,7 @@ const HouseDetails = () => {
               }`}
             >
               <img
-                className="w-full h-full rounded-lg object-fit"
+                className="w-full h-full transition-all duration-200 rounded-lg object-fit opacity-90 hover:opacity-100"
                 src={imageURL}
                 alt="house image"
               />
