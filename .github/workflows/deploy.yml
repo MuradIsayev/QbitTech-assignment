@@ -22,11 +22,6 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
-      - name: Start JSON Server
-        run: |
-          npm install -g json-server
-          json-server --watch db.json &
-
       - name: Build project
         run: npm run build
 
