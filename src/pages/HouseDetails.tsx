@@ -7,6 +7,7 @@ import floor from '../assets/icons/floor.png';
 import money from '../assets/icons/money.png';
 import InfoBox from '@/components/InfoBox';
 import furniture from '../assets/icons/furniture.png';
+import { Button } from '@/components/ui/button';
 
 type HouseParams = {
   id: string;
@@ -38,9 +39,9 @@ const HouseDetails = () => {
   return (
     <>
       <Link to="/house">
-        <div className="inline-flex items-center px-3 py-2 mt-1 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <Button className="text-base" variant="link">
           Go Back
-        </div>
+        </Button>
       </Link>
       <h3 className="mt-2 mb-2 text-xl">{house.address}</h3>
       <div className="h-auto p-3 bg-gray-200 rounded-lg dark:bg-gray-800">
