@@ -24,7 +24,7 @@ const InfoBox = ({ header, icon, value, unit }: Props) => {
         </div>
         <p
           className={`text-[1.1rem] font-semibold text-gray-700 dark:text-gray-400 ${
-            header === 'Description' ? 'text-[.91rem]' : 'text-[1.1rem]'
+            header === 'Description' ? 'text-[.88rem]' : 'text-[1.1rem]'
           }`}
         >
           {value} {unit}

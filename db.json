@@ -63,6 +63,70 @@
             "area": 1000,
             "description": "Modern loft in downtown area. Close to everything.",
             "isFurnished": true
+        },
+        {
+            "id": 5,
+            "imageURLs": [
+                "https://www.livehome3d.com/assets/img/social/how-to-design-a-house.jpg",
+                "https://mygate.com/wp-content/uploads/2023/07/110.jpg",
+                "https://assets-news.housing.com/news/wp-content/uploads/2022/04/07013406/ELEVATED-HOUSE-DESIGN-FEATURE-compressed.jpg",
+                "https://cdn.houseplansservices.com/product/f14kbdvad9hvfguvli1jk9m26b/w620x413.jpg?v=4",
+                "https://www.thehousedesigners.com/images/plans/URD/bulk/6583/the-destination-front-rendering.jpg"
+            ],
+            "floor": 3,
+            "price": 180000.0,
+            "address": "222 Oakwood Lane, Springfield",
+            "area": 1300,
+            "isFurnished": true,
+            "description": "Beautiful spacious villa situated amidst serene surroundings. Ideal for peaceful living with a breathtaking view of nature."
+        },
+        {
+            "id": 6,
+            "imageURLs": [
+                "https://www.livehome3d.com/assets/img/social/how-to-design-a-house.jpg",
+                "https://mygate.com/wp-content/uploads/2023/07/110.jpg",
+                "https://assets-news.housing.com/news/wp-content/uploads/2022/04/07013406/ELEVATED-HOUSE-DESIGN-FEATURE-compressed.jpg",
+                "https://cdn.houseplansservices.com/product/f14kbdvad9hvfguvli1jk9m26b/w620x413.jpg?v=4",
+                "https://www.thehousedesigners.com/images/plans/URD/bulk/6583/the-destination-front-rendering.jpg"
+            ],
+            "floor": 8,
+            "price": 95000.0,
+            "address": "789 Pinecrest Drive, Riverdale",
+            "area": 900,
+            "isFurnished": false,
+            "description": "Cozy apartment in a serene locality. Perfect for small families looking for comfort and convenience."
+        },
+        {
+            "id": 7,
+            "imageURLs": [
+                "https://www.livehome3d.com/assets/img/social/how-to-design-a-house.jpg",
+                "https://mygate.com/wp-content/uploads/2023/07/110.jpg",
+                "https://assets-news.housing.com/news/wp-content/uploads/2022/04/07013406/ELEVATED-HOUSE-DESIGN-FEATURE-compressed.jpg",
+                "https://cdn.houseplansservices.com/product/f14kbdvad9hvfguvli1jk9m26b/w620x413.jpg?v=4",
+                "https://www.thehousedesigners.com/images/plans/URD/bulk/6583/the-destination-front-rendering.jpg"
+            ],
+            "floor": 4,
+            "price": 105000.0,
+            "address": "456 Hillside Avenue, Oakville",
+            "area": 1100,
+            "isFurnished": true,
+            "description": "Modern-style house with vibrant interiors and spacious rooms. Close to parks and shopping centers."
+        },
+        {
+            "id": 8,
+            "imageURLs": [
+                "https://www.livehome3d.com/assets/img/social/how-to-design-a-house.jpg",
+                "https://mygate.com/wp-content/uploads/2023/07/110.jpg",
+                "https://assets-news.housing.com/news/wp-content/uploads/2022/04/07013406/ELEVATED-HOUSE-DESIGN-FEATURE-compressed.jpg",
+                "https://cdn.houseplansservices.com/product/f14kbdvad9hvfguvli1jk9m26b/w620x413.jpg?v=4",
+                "https://www.thehousedesigners.com/images/plans/URD/bulk/6583/the-destination-front-rendering.jpg"
+            ],
+            "floor": 6,
+            "price": 220000.0,
+            "address": "1010 Maple Avenue, Arlington",
+            "area": 1600,
+            "isFurnished": false,
+            "description": "Stunning villa designed with a contemporary touch. Exquisite landscaping and luxurious amenities."
         }
     ]
 }
