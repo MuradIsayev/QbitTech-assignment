@@ -18,7 +18,7 @@ const Filters = ({
     <>
       <Input
         type="number"
-        className={`max-w-[10rem] ${name === 'maxPrice' ? 'mr-6' : ''}`}
+        className={`grow max-w-[10rem] ${name === 'maxPrice' ? 'lg:mr-8' : ''}`}
         name={name}
         value={value ?? ''}
         onChange={handleInputChange}
