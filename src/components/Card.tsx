@@ -5,7 +5,7 @@ import floor from '../assets/icons/floor.png';
 import area from '../assets/icons/area.png';
 
 interface CardProps {
-  house: House; // Define the prop structure as a single House object
+  house: House;
 }
 
 const Card: React.FC<CardProps> = ({ house }) => {

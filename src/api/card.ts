@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { House } from '@/types/house'; // Import the House type from your file
+import { House } from '@/types/house';
 
 export const fetchHouses = async (): Promise<House[]> => {
   try {
