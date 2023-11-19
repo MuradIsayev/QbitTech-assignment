@@ -1,18 +1,29 @@
-import { Input } from '@/components/ui/input';
+// SearchBar.tsx
+import React from 'react';
+import { Input } from './ui/input';
 
-const SearchBar = () => {
+interface SearchBarProps {
+  searchTerm: string;
+  setSearchTerm: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const SearchBar: React.FC<SearchBarProps> = ({ searchTerm, setSearchTerm }) => {
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(event.target.value);
+  };
+
   return (
-    <nav className="w-full h-10 mt-5 mb-4">
-      <div className="flex items-center justify-between gap-2 mb-3">
-        <Input
-          type="search"
-          className="max-w-sm"
-          name="search"
-          placeholder="Search by address..."
-          autoComplete="off"
-        />
-      </div>
-    </nav>
+    <>
+      <Input
+        type="search"
+        className="max-w-sm mr-5"
+        name="search"
+        placeholder="Search by address..."
+        autoComplete="off"
+        value={searchTerm}
+        onChange={handleInputChange}
+      />
+    </>
   );
 };
 
