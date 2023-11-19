@@ -1,27 +1,26 @@
 # React + TypeScript + Vite
+# House Selling Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Setup Process
 
-Currently, two official plugins are available:
+### 1. Clone Repository
+Clone the repository to your local machine:
+git clone https://github.com/MuradIsayev/qbitTech-assignment.git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 2. Install Dependencies
+Navigate to the project directory and install dependencies:
+cd qbitTech-assignment
+npm install
 
-## Expanding the ESLint configuration
+### 3. Start JSON Server
+Ensure you have json-server installed globally. If not, install it:
+npm install -g json-server
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Start the JSON Server using the existing db.json file:
+json-server --watch db.json
+The mock backend will run at http://localhost:3000/houses.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### 4. Start React Application
+Open a new terminal window/tab and start the React application:
+npm run dev
+The React application will run at http://localhost:5173.
