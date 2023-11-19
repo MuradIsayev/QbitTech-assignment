@@ -79,7 +79,7 @@ const Home: React.FC = () => {
     }
 
     return (
-      <div className="grid grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {filteredHouses.map(house => (
           <Card key={house.id} house={house} />
         ))}
@@ -88,39 +88,45 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div>
-      <nav className="w-full h-10 mt-5 mb-4">
-        <div className="flex items-center gap-2 mb-3">
+    <div className="">
+      <nav className="w-full mt-5 mb-4">
+        <div className="flex flex-col flex-wrap items-start gap-2 mb-3 md:flex-row lg:items-center">
           <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-          <Filters
-            value={filterOptions.minPrice}
-            name="minPrice"
-            placeholder="Min Price:"
-            handleInputChange={handleInputChange}
-          />
-          -
-          <Filters
-            value={filterOptions.maxPrice}
-            name="maxPrice"
-            placeholder="Max Price:"
-            handleInputChange={handleInputChange}
-          />
-          <Filters
-            value={filterOptions.minFloor}
-            name="minFloor"
-            placeholder="Min Floor:"
-            handleInputChange={handleInputChange}
-          />
-          -
-          <Filters
-            value={filterOptions.maxFloor}
-            name="maxFloor"
-            placeholder="Max Floor:"
-            handleInputChange={handleInputChange}
-          />
-          <Button variant="secondary" onClick={resetFilters}>
-            RESET
-          </Button>
+          <div className="flex flex-row items-center gap-2">
+            <Filters
+              value={filterOptions.minPrice}
+              name="minPrice"
+              placeholder="Min Price:"
+              handleInputChange={handleInputChange}
+            />
+            -
+            <Filters
+              value={filterOptions.maxPrice}
+              name="maxPrice"
+              placeholder="Max Price:"
+              handleInputChange={handleInputChange}
+            />
+          </div>
+          <div className="flex flex-row items-center gap-2">
+            <Filters
+              value={filterOptions.minFloor}
+              name="minFloor"
+              placeholder="Min Floor:"
+              handleInputChange={handleInputChange}
+            />
+            -
+            <Filters
+              value={filterOptions.maxFloor}
+              name="maxFloor"
+              placeholder="Max Floor:"
+              handleInputChange={handleInputChange}
+            />
+          </div>
+          <div>
+            <Button variant="secondary" onClick={resetFilters}>
+              RESET
+            </Button>
+          </div>
         </div>
       </nav>
       <div>
