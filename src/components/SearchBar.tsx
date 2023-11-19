@@ -16,7 +16,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ searchTerm, setSearchTerm }) => {
     <>
       <Input
         type="search"
-        className="max-w-sm mr-5"
+        className="max-w-[28rem] lg:mr-8"
         name="search"
         placeholder="Search by address..."
         autoComplete="off"
