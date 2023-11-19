@@ -130,7 +130,7 @@ const Home: React.FC = () => {
         </div>
       </nav>
       <div>
-        <h3 className="mb-3 text-2xl">Houses</h3>
+        <h3 className="mb-3 text-xl">{filteredHouses.length} houses found</h3>
         {renderHouses()}
       </div>
     </div>
